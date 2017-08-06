@@ -1,0 +1,1225 @@
+/*初始化css*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*公共css	*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.contents {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.contents1 {
+    width: 92%;
+    margin: 0 auto;
+}
+
+div {
+    overflow: hidden;
+}
+
+
+/*主体页面样式*/
+
+.body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pageshow {
+    display: block;
+}
+
+.show {
+    opacity: 1;
+}
+
+
+/* 加载页 */
+
+#page22 .main {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page22 .one {
+    width: 100%;
+    position: absolute;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#page22 .one {
+    animation: move 3s ease-in-out 0.01s 1 forwards;
+}
+
+#page22 .two {
+    width: 100%;
+    top: 38%;
+    position: absolute;
+}
+
+@keyframes two {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes two {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#page22 .two {
+    animation: two 3s ease-in-out 0.01s 1 forwards;
+}
+
+#page22 .three {
+    width: 100%;
+    top: 38.1%;
+    left: 50%;
+    position: absolute;
+}
+
+@keyframes three {
+    0% {
+        transform: translate(50%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes three {
+    0% {
+        transform: translate(50%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#page22 .three {
+    animation: three 3s ease-in-out 0.01s 1 forwards;
+}
+
+#page22 .fore {
+    width: 100%;
+    top: 55%;
+    position: absolute;
+}
+
+@keyframes fore {
+    0% {
+        transform: translate(0, 100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes fore {
+    0% {
+        transform: translate(0, 100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+#page22 .six{
+      			width: 100%;
+      			position: absolute;
+      		}
+      		@keyframes six{
+				0%{transform:translate(70%,-100%);}
+				
+				100%{transform:translate(70%,10%);}
+			}
+			@-webkit-keyframes six{
+				0%{transform:translate(0,-100%);}
+				
+				100%{transform:translate(70%,10%);}
+			}
+			
+      		#page22 .six{
+      			  animation:  six  2s ease-in-out 0.1s 1 forwards;
+      			  
+      		}
+
+#page22 .fore {
+    animation: fore 3s ease-in-out 0.01s 1 forwards;
+}
+
+#page22 .load10 {
+    width: 10%;
+    height: 6%;
+    border-radius: 50%;
+    top: 45.5%;
+    left: 45%;
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+#page21 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page21 .llogo{
+	top: 1%;
+	left: 25.1%;
+	width: 100%;
+	position: absolute;
+}
+@keyframes ten {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes ten {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#page21 .llogo {
+    animation: ten 3s ease-in-out 0.01s 1 forwards;
+}
+
+/*页面一*/
+
+#page0 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page0 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page0 .load6 {
+    top: 5%;
+    left: 44%;
+    width: 20%;
+    position: absolute;
+}
+@keyframes fire {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes fire {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#page0 .load6 {
+    animation: fire 3s ease-in-out 0.01s 1 forwards;
+}
+
+
+/* 选择符 */
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+input:checked+label {
+    background-image: url('../img/沟.png');
+    background-repeat: no-repeat;
+}
+
+#page1 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page1 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page1 .load1 {
+	width: 5%;
+	height: 3%;
+	top: 41.5%;
+	left: 85%;
+    position: absolute;
+}
+
+#page1 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page1 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page1 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page1 .load6 {
+    top: 85%;
+    left: 35%;
+    position: absolute;
+}
+
+
+/*页面二*/
+
+#page2 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page2 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page2 .load1 {
+	width: 5%;
+	height: 3%;
+    top: 42%;
+    left: 85%;
+    position: absolute;
+}
+
+#page2 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page2 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page2 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page2 .load5 {
+    top: 85%;
+    left: 15%;
+    position: absolute;
+}
+
+#page2 .load6 {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/*页面三*/
+
+#page3 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page3 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page3 .load1 {
+	width: 5%;
+	height: 3%;
+    top: 42%;
+    left: 85%;
+    position: absolute;
+}
+
+#page3 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page3 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page3 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page3 .load5 {
+    top: 85%;
+    left: 15%;
+    position: absolute;
+}
+
+#page3 .load6 {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/*页面四*/
+
+#page4 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page4 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page4 .load1 {
+	width: 5%;
+	height: 3%;
+    top: 42%;
+    left: 85%;
+    position: absolute;
+}
+
+#page4 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page4 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page4 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page4 .load5 {
+    top: 85%;
+    left: 15%;
+    position: absolute;
+}
+
+#page4 .load6 {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/*页面五*/
+
+#page5 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page5 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page5 .load1 {
+	width: 5%;
+	height: 3%;
+    top: 42%;
+    left: 85%;
+    position: absolute;
+}
+
+#page5 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page5 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page5 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page5 .load5 {
+    top: 85%;
+    left: 15%;
+    position: absolute;
+}
+
+#page5 .load6 {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/*页面六*/
+
+#page6 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page6 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page6 .load1 {
+	width: 5%;
+	height: 3%;
+    top: 42%;
+    left: 85%;
+    position: absolute;
+}
+
+#page6 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page6 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page6 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page6 .load5 {
+    top: 85%;
+    left: 15%;
+    position: absolute;
+}
+
+#page6 .load6 {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/*页面七*/
+
+#page7 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page7 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page7 .load1 {
+	width: 5%;
+	height: 3%;
+    top: 42%;
+    left: 85%;
+    position: absolute;
+}
+
+#page7 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page7 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page7 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page7 .load5 {
+    top: 85%;
+    left: 15%;
+    position: absolute;
+}
+
+#page7 .load6 {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/*页面八*/
+
+#page8 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page8 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page8 .load1 {
+	width: 5%;
+	height: 3%;
+    top: 42%;
+    left: 85%;
+    position: absolute;
+}
+
+#page8 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page8 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page8 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page8 .load5 {
+    top: 85%;
+    left: 15%;
+    position: absolute;
+}
+
+#page8 .load6 {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/*页面九*/
+
+#page9 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page9 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page9 .load1 {
+	width: 5%;
+	height: 3%;
+    top: 42%;
+    left: 85%;
+    position: absolute;
+}
+
+#page9 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page9 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page9 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page9 .load5 {
+    top: 85%;
+    left: 15%;
+    position: absolute;
+}
+
+#page9 .load6 {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/*页面十*/
+
+#page10 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page10 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page10 .load1 {
+	width: 5%;
+	height: 3%;
+    top: 42%;
+    left: 85%;
+    position: absolute;
+}
+
+#page10 .load2 {
+	width: 5%;
+	height: 3%;
+    top: 50%;
+    left: 85%;
+    position: absolute;
+}
+
+#page10 .load3 {
+	width: 5%;
+	height: 3%;
+    top: 57%;
+    left: 85%;
+    position: absolute;
+}
+
+#page10 .load4 {
+	width: 5%;
+	height: 3%;
+    top: 65%;
+    left: 85%;
+    position: absolute;
+}
+
+#page10 .load5 {
+    top: 85%;
+    left: 15%;
+    position: absolute;
+}
+
+#page10 .load6 {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面十一 */
+
+#page11 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page11 .main1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page11 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page11 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面12 */
+
+#page12 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page12 .change {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page12 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page12 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面13 */
+
+#page13 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page13 .change {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page13 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page13 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面14 */
+
+#page14 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page14 .change {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page14 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page14 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面15 */
+
+#page15 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page15 .change {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page15 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page15 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面16 */
+
+#page16 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page16 .change {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page16 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page16 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面17 */
+
+#page17 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page17 .change {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page17 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page17 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面18 */
+
+#page18 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page18 .change {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page18 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page18 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面19 */
+
+#page19 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page19 .change {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page19 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page19 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
+
+
+/* 页面20 */
+
+#page20 .main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+#page20 .change {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page20 .load5 {
+    top: 88%;
+    left: 15%;
+    position: absolute;
+}
+
+#page20 .load6 {
+    top: 88%;
+    left: 50%;
+    position: absolute;
+}
