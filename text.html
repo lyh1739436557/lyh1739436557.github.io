@@ -93,8 +93,11 @@
                     moveY=endY-starY;
                     sum+=moveY;
                     console.log(sum);
-                    if(sum<0 || sum>4100){
-                        return;
+                    if(sum<0){
+                        return sum=0;
+                    }
+                    if(sum>4100){
+                        return sum=4100;
                     }
                     
                     touch_obj.style.transform='translateZ('+sum+'px'+')';
