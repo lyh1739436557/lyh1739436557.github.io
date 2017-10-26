@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+/*音乐播放按钮*/
+.playMusic{
+	animation:ball2 7s infinite linear;
+	transform-origin: 50% 50%;
+}
+
+/*pgae0 start*/
+#page0 img:nth-child(1){
+	animation:circle0 6s linear infinite ;
+	transform-origin: 50% 50%;
+}
+@keyframes circle0{
+	from{
+		transform: rotate(0deg) scale(0.8);
+	}
+	50%{
+		transform: rotate(180deg) scale(1.2);
+	}
+	to{
+		transform: rotate(360deg) scale(0.8);
+	}
+}
+#page0 img:nth-child(2){
+	animation:circle00 6s linear infinite ;
+	transform-origin: 50% 50%;
+}
+@keyframes circle00{
+	from{
+		transform: rotate(0deg) scale(1);
+	}
+	50%{
+		transform: rotate(-180deg) scale(0.8);
+	}
+	to{
+		transform: rotate(-360deg) scale(1);
+	}
+}
+/*page0 end*/
+
+/*page1 start*/
+.dir{
+	animation:direc 1s infinite ;
+}
+@keyframes direc{
+	from{
+		transform:translate(40%) scale(0.8);
+		opacity: 1;
+	}
+	to{
+		transform:translate(-40%) scale(0.8);
+		opacity: 0;
+	}
+}
+/*page1 end*/
+.dirR{
+	animation:directionR 2s infinite ;
+}
+@keyframes directionR{
+	from{
+		transform:translate(40%) scale(0.8);
+	}
+	50%{
+		transform:translate(-40%) scale(0.8);
+	}
+	to{
+		transform:translate(40%) scale(0.8);
+	}
+}
+/*星空背景图*/
+.bg{
+	animation:bg1 50s  linear infinite;
+	-webkit-animation:bg1 50s  linear infinite;
+}
+@keyframes bg1 {
+	0%{transform: translate(0%);}
+	100%{transform: translate(-50%);}
+}
+@-webkit-keyframes bg1 {
+	0%{-webkit-transform: translate(0%);}
+	100%{-webkit-transform: translate(-50%);}
+}
+/*标题 title*/
+#page2 img:nth-child(2),
+#page3 img:nth-child(2),
+#page4 img:nth-child(2),
+#page5 img:nth-child(2){
+	animation:title 1s forwards;
+}
+@keyframes title{
+	0%{transform: translateY(-100%);}
+	100%{transform: translateY(5%);}
+}
+
+/*底部转的球 ball*/
+#page2 img:nth-child(8),
+#page3 img:nth-child(8),
+#page4 img:nth-child(8),
+#page5 img:nth-child(4){
+	animation:ball2 70s infinite linear;
+	transform-origin: 50% 50%;
+}
+@keyframes ball2{
+	from{transform:rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+
+/*p1*/
+#page2 img:nth-child(3),
+#page3 img:nth-child(3),
+#page4 img:nth-child(3){
+	animation:p1 2s forwards;
+}
+@keyframes p1{
+	0%{transform: translateX(-150%);opacity:0;}
+	50%{transform: translateX(-150%);opactity:0;}
+	100%{transform: translateX(40%);}
+}
+/*p2*/
+#page2 img:nth-child(4),
+#page3 img:nth-child(4),
+#page4 img:nth-child(4){
+	animation:p2 3s forwards;
+}
+@keyframes p2{
+	0%{transform: translateX(200%);opacity:0;}
+	50%{transform: translateX(200%);opacity:0;}
+	100%{transform: translateX(25%);}
+}
+/*p3*/
+#page2 img:nth-child(5),
+#page3 img:nth-child(5),
+#page4 img:nth-child(5){
+	animation:p3 4s forwards;
+}
+@keyframes p3{
+	0%{transform: translateX(-100%);opacity:0;}
+	50%{transform: translateX(-100%);opacity:0;}
+	100%{transform: translateX(50%);}
+}
+/*p4*/
+#page4 img:nth-child(9){
+	animation:p4 5s forwards;
+}
+@keyframes p4{
+	0%{transform: translateX(200%);opacity:0;}
+	60%{transform: translateX(200%);opacity:0;}
+	100%{transform: translateX(190%);}
+}
+
+/*2start*/
+/*图片外边框线条 line*/
+#page2 img:nth-child(6){
+	animation:two_line 3s forwards;
+}
+@keyframes two_line{
+	from{top:0;opacity:0;}
+	80%{opacity:0;}
+	90%{width:101%;opacity:1;}
+	to{top:49%;left:35%;}
+}
+/*插入的图片 img*/
+#page2 img:nth-child(7){
+	animation:two_img 4s forwards;
+}
+@keyframes two_img{
+	from{top:0;opacity:0;}
+	90%{opacity:0;}
+	to{top:52%;left:42%;}
+}
+/*2end*/
+
+/*3start*/
+/*图片外边框线条 line*/
+#page3 img:nth-child(6){
+	animation:three_line 3s forwards;
+}
+@keyframes three_line{
+	from{top:0;opacity:0;}
+	80%{opacity:0;}
+	90%{width:101%;opacity:1;}
+	to{top:49%;left:30%;}
+}
+/*插入的图片 img*/
+#page3 img:nth-child(7){
+	animation:three_img 4s forwards;
+}
+@keyframes three_img{
+	from{top:0;opacity:0;}
+	90%{opacity:0;}
+	to{top:50%;left:32%;}
+}
+/*3end*/
+
+/*4start*/
+/*图片外边框线条 line*/
+#page4 img:nth-child(6){
+	animation:line1 3s forwards;
+}
+@keyframes line1{
+	from{top:0;opacity:0;}
+	80%{opacity:0;}
+	90%{width:101%;opacity:1;}
+	to{top:52%;left:8%;}
+}
+/*插入的图片 img*/
+#page4 img:nth-child(7){
+	animation:four_img 4s forwards;
+}
+@keyframes four_img{
+	from{top:0;opacity:0;}
+	90%{opacity:0;}
+	to{top:55%;left:15%;}
+}
+/*4end*/
+
+/*5start*/
+#page5 img:nth-child(3){
+	animation:five_img 2s forwards linear;
+ }
+@keyframes five_img{
+	from{transform:scale(0);opacity:0;}
+	50%{transform:scale(0);opacity:1;}
+	to{transform:scale(1);}
+}
+#button5{
+	animation: button5 2s ease-in-out 0s infinite forwards;
+}
+@keyframes button5{
+	from{
+		transform:scale(0.8,0.8);
+		}
+	50%{
+		transform:scale(1.4,1.4);
+	}
+	to{
+		transform:scale(0.8,0.8);
+		}
+}
+/*5end*/
+
+/*上手势*/
+.dirU{
+	animation:directionU 2s infinite ;
+}
+@keyframes directionU{
+	from{
+		transform:translateY(10%) scale(0.8);
+	}
+	50%{
+		transform:translateY(-10%) scale(0.8);
+	}
+	to{
+		transform:translateY(10%) scale(0.8);
+	}
+}

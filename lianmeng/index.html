@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no"/>
+    <title>联盟医药</title>
+    <!--布局文件-->
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--动画插件-->
+    <link rel="stylesheet" href="css/animate.css"/>
+    <!--动画文件-->
+    <link rel="stylesheet" href="css/animation.css"/>
+	<!--导入jquery-->
+	<script type="text/javascript" src="js/zepto.js" ></script>
+	<!--导入js-->
+	<script type="text/javascript" src="js/index.js" ></script>
+</head>
+<body>
+	<script type='text/javascript'>
+		document.querySelector('body').addEventListener('touchstart', function (ev) {
+		    //取消浏览器下拉
+		    ev.preventDefault();
+		});
+	</script>
+	
+    <div id="music">
+    	<img src="images/0music@2x.png"  class="playMusic"/>
+    </div>
+    
+    <audio src="music/bgmusic.mp3"  autoplay="autoplay"  preload="auto" loop="loop" id="bgMusic1"></audio>
+    
+	<!--0start-->
+	<section class="page pageShow" id="page0">
+		<img src="images/0circle@2x.png" />
+		<img src="images/0circle@2x.png" />
+		<img src="images/0loading.gif" />
+		<p><span class="num">0</span></p>
+		<img src="images/0logo@2x.png" class="animated fadeInUp"/>
+	</section>
+	<!--0end-->
+	<!--1start-->
+	<section class="page" id="page1">
+		<img src="images/earth.jpg" class="bg"/>
+		<img src="images/1star1@2x.png" />
+		<img src="images/1logo@2x.png" class="animated fadeInDown"/>
+		<img src="images/1bar@2x.png" class="animated bounceInLeft"/>
+		<img src="images/1text1@2x.png" class="animated fadeInLeft"/>
+		<img src="images/1text2@2x.png" class="animated fadeInRight"/>
+		<img src="images/1text3@2x.png" class="animated fadeInLeft"/>
+		<img src="images/1text4@2x.png" class="animated fadeInRight"/>
+		<img src="images/1star2@2x.png" />
+		<img src="images/1title@2x.png" class="animated jello"/>
+		<img src="images/1directionR.png" class="dir"/>
+	</section>
+	<!--1end-->
+	<!--2start-->
+	<section class="page " id="page2">
+    	<img src="images/bg.jpg" class="bg">
+    	<img src="images/2title.png">
+        <img src="images/2p1.png">
+        <img src="images/2p2.png">
+        <img src="images/2p3.png">
+        <img src="images/2line.png">
+        <img src="images/2img.png">
+        <img src="images/2ball.png">
+        <img src="images/1directionLR.png" class="dirR"/>
+	</section>
+	<!--2end-->
+    <!--3start-->
+	<section class="page " id="page3">
+    	<img src="images/bg.jpg" class="bg">
+    	<img src="images/3title.png">
+        <img src="images/3p1.png">
+        <img src="images/3p2.png">
+        <img src="images/3p3.png">
+        <img src="images/2line.png">
+        <img src="images/3img.png">
+        <img src="images/3ball.png">
+        <img src="images/1directionLR.png" class="dirR"/>
+	</section>
+	<!--3end-->
+    <!--4start-->
+	<section class="page " id="page4">
+    	<img src="images/bg.jpg" class="bg">
+    	<img src="images/4title.png">
+        <img src="images/4p1.png">
+        <img src="images/4p2.png">
+        <img src="images/4p3.png">
+        <img src="images/2line.png">
+        <img src="images/4img.png">
+        <img src="images/4ball.png">
+        <img src="images/4p4.png">
+        <img src="images/1directionLR.png" class="dirR"/>
+	</section>
+	<!--4end-->
+    <!--5start-->
+	<section class="page " id="page5">
+    	<img src="images/bg.jpg" class="bg">
+    	<img src="images/5title.png">
+        <img src="images/5img.png" id="Dipper">
+        <img src="images/2ball.png"> 
+        <div id="popWindow" class="animated fadeIn"></div>
+        <p id="join">点击进入</p>
+        <img src="images/5button.png"  id="button5">
+        <img src="images/5blackhole.png" id="blackhole">
+		<audio src="music/bing.mp3" loop="loop"   preload="auto" id="bing"></audio>
+		<audio src="music/hei.mp3"   preload="auto" id="hei"></audio>
+	</section>
+	<!--5end-->
+    
+    <div class="stage " style="display: none;">
+		<img src="images/earth.jpg" id="bgEarth">
+        <img src="images/box.png" id="box">
+        <img src="images/event_bg.png"  id="event">
+        <img src="images/1directionU.png" class="dirU" id="directU"/>
+        <div class="container" id="con">
+            <!--6start-->
+            <section class="page  pageShow " id="page6">
+                <img src="images/6time.png">
+                <img src="images/6logo.png">
+                <img src="images/6event.png">
+            </section>
+            <!--6end-->
+            <section class="page  pageShow zhong1">
+            	<img src="images/zhong.png">
+                <img src="images/5img2.png">
+            </section>
+            <!--7start-->
+            <section class="page  pageShow " id="page7">
+                <!--<img src="images/7sellufo.png">
+                <img src="images/7sellufo.png">-->
+                <img src="images/7time.png">
+                <img src="images/gsp.png">
+                <img src="images/7event.png">
+                <img src="images/7satellite.png">
+            </section>
+            <!--7end-->
+            <section class="page  pageShow zhong2">
+            	<img src="images/zhong.png">
+                <img src="images/5img3.png">
+            </section>
+            <!--8start-->
+            <section class="page  pageShow " id="page8">
+                <img src="images/8time.png">
+                <img src="images/8logo.png">
+                <img src="images/8event.png">
+                <img src="images/7sellufo.png">
+            </section>
+            <!--8end-->
+            <section class="page  pageShow zhong3">
+            	<img src="images/zhong.png">
+                <img src="images/5img4.png">
+            </section>
+            <!--9start-->
+            <section class="page  pageShow " id="page9">
+                <img src="images/9time.png">
+                <img src="images/9logp.png">
+                <img src="images/gsp.png">
+                <img src="images/7satellite.png">
+            </section>
+            <!--9end--> 
+            <section class="page  pageShow zhong4">
+            	<img src="images/zhong.png">
+                <img src="images/5img5.png">
+            </section>
+            <!--10start-->
+            <section class="page  pageShow " id="page10">
+                <img src="images/10time.png">
+                <img src="images/10gsp.png">
+                <img src="images/10logo.png">
+                <img src="images/10event.png">
+                <img src="images/7sellufo.png">
+            </section>
+            <!--10end-->
+            <section class="page  pageShow zhong5">
+            	<img src="images/zhong.png">
+                <img src="images/5img6.png">
+            </section>
+            <!--11start-->
+            <section class="page  pageShow " id="page11">
+                <img src="images/11time.png">
+                <img src="images/11logo.png">
+                <img src="images/11event.png">
+            </section>
+            <!--11end-->
+            <section class="page  pageShow zhong6">
+            	<img src="images/zhong.png">
+                <img src="images/5img7.png">
+            </section>
+             <!--12start-->
+            <section class="page   pageShow  " id="page12">
+                <img src="images/12time.png">
+                <img src="images/12event.png">
+                <img src="images/12img.png">
+            </section>
+            <!--12end-->
+            <section class="page  pageShow zhong7">
+            	<img src="images/zhong.png">
+                <img src="images/5img7.png">
+            </section>
+    	</div>
+    </div>
+	
+	<!--13start-->
+    <section class="page" id="page13">
+        <img src="images/13bg.jpg" class="bg">
+        <img src="images/1logo@2x.png" class="animated fadeInDown">
+        <img src="images/13title.png" class="animated fadeInLeft">
+        <img src="images/13text.png" class="animated fadeInRight">
+        <img src="images/logojin@2x.png" class="animated fadeInUp">
+    </section>
+    <!--13end-->
+	
+</body>
+</html>
