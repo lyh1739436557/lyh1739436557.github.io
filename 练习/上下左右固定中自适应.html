@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .one {
+            flex: 0 0 auto;
+            height: 100px;
+            background: red;
+        }
+        .two {
+            flex: 1 1 auto;
+            height: calc(100vh - 200px);
+            overflow: hidden;
+            background: gray;
+        }
+        .three {
+            flex: 0 0 auto;
+            height: 100px;
+            background: blue;
+        }
+        .tow1 {
+            flex: 0 0 auto;
+            width: 200px;
+            height: 100%;
+            background: pink;
+        }
+        .tow2 {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two">
+            <div class="tow1"></div>
+            <div class="tow2"></div>
+        </div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>
