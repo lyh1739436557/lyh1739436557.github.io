@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+</head>
+<script type="text/javascript">
+  // 改变函数运行时的this指向，实际就是把一个函数放到另一个函数内部运行
+  Function.prototype.call1 = function (content = window) {
+    content.fn = this;
+    res = [...arguments].slice(1);
+    let result = content.fn(...res);
+    delete content.fn
+    return result
+  }
+  let foo = {
+    value: 6
+  }
+  function sayName(name, age) {
+    console.log(name, age, this.value);
+  }
+  sayName.call1(foo, '1', 23)
+  console.log(foo);
+</script>
+
+</html>
