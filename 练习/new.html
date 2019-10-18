@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+</head>
+<script type="text/javascript">
+  // 创建一个新函数，将构造函数的this指向新函数，执行构造函数（为新对象添加属性），返回新的函数
+  function New(func) {
+    let res = {}
+    if(func.prototype != null) {
+      res._proto_ = func.prototype
+    }
+    let ret = func.call(res, ...Array.prototype.slice.call(arguments, 1))
+    if((typeof ret == "object" || typeof ret == "function") && ret !=null) {
+      return ret
+    }
+    return res
+  }
+  function testNew(name, age) {
+    this.name = name;
+    this.age = age;
+    console.log(name, age);
+  }
+  let a = new testNew('123123', 23);
+  let b = New(testNew, '000', 15)
+  console.log(a.name, b.age);
+</script>
+
+</html>
