@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    class ObrList {
+      constructor() {
+        this.list = {};
+      }
+      add(key, fn) {
+        if (!this.list[key]) {
+          this.list[key] = []
+        }
+        this.list[key].push(fn);
+      }
+      trigger() {
+        let key = Array.prototype.shift.call(arguments);
+        let fns = this.list[key]
+        if (fns && fns.length == 0) {
+          return false
+        }
+        fns.map(fn => {
+          fn.apply(this, arguments)
+        })
+      }
+    }
+
+    let a = new ObrList();
+    a.add("sayhello", function (params) {
+      console.log(params);
+    })
+    a.add("sayhello", function (params) {
+      console.log('world', params);
+    })
+    a.add("sayhello1", function (params) {
+      console.log(params, 'hello');
+    })
+
+    a.trigger('sayhello1', 'world')
+    a.trigger('sayhello', 'world')
+  </script>
+</body>
+
+</html>
