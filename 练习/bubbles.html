@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .ball {
+      -webkit-user-select: none;
+      padding: 5px;
+      text-align: center;
+      color: rgb(121, 75, 75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      word-break: break-all;
+      cursor: pointer;
+    }
+    #container{
+      width: 1000px;
+      height: 1000px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+  <script>
+    function BallBox(a, b) {
+      var c = this.container = document.getElementById(a);
+      var b = this.opts = b || {};
+      this.width = b.width || c.offsetWidth;
+      this.height = b.height || c.offsetHeight;
+      this.child = []
+    }
+    BallBox.prototype.addBall = function (a) {
+      this.child.push(a);
+      if (a.e.parentNode != this.container) {
+        this.container.appendChild(a.e)
+      }
+    };
+    BallBox.prototype.ballRun = function () {
+      clearInterval(this.ballRunTimer);
+      var g = this;
+      var w = this.width;
+      var h = this.height;
+      var k = this.isColl;
+      var l = this.coll;
+      this.ballRunTimer = setInterval(function () {
+        var a = g.child;
+        var c = a.length;
+        for (var i = 0; i < c; i++) {
+          a[i].foot()
+        }
+        for (var i = 0; i < c; i++) {
+          var d = a[i];
+          var b = d.b;
+          if (d.x < b) {
+            d.x = b;
+            d.sx *= -0.5
+          }
+          if (d.y < b) {
+            d.y = b;
+            d.sy *= -0.5
+          }
+          var e = w - b;
+          if (d.x > e) {
+            d.x = e;
+            d.sx *= -0.5
+          }
+          var f = h - b;
+          if (d.y > f) {
+            d.y = f;
+            d.sy *= -0.5
+          }
+        }
+        for (var i = 0; i < c; i++) {
+          for (var j = i + 1; j < c; j++) {
+            if (k(a[i], a[j])) {
+              l(a[i], a[j]);
+              a[i].collNum++;
+              a[i].callBack(a[i].collNum);
+              a[j].collNum++;
+              a[j].callBack(a[j].collNum)
+            }
+          }
+        }
+      }, 10)
+    };
+    BallBox.prototype.ballStop = function () {
+      clearInterval(this.ballRunTimer)
+    };
+    BallBox.prototype.coll = function (a, b) {
+      var c = b.x - a.x;
+      var d = b.y - a.y;
+      var e = b.sx - a.sx;
+      var f = b.sy - a.sy;
+      var g = Math.atan2(f, e);
+      var h = Math.atan2(-d, -c);
+      var i = Math.abs(h - g);
+      var D = Math.PI / 2;
+      if (i <= 3 * D && i >= D) return;
+      var j = a.m || 1;
+      var k = b.m || 1;
+      var l = j + k;
+      var m = ((j - k) * a.sx + 2 * k * b.sx) / l;
+      var n = ((k - j) * b.sx + 2 * j * a.sx) / l;
+      var o = ((j - k) * a.sy + 2 * k * b.sy) / l;
+      var p = ((k - j) * b.sy + 2 * j * a.sy) / l;
+      a.sx = m;
+      a.sy = o;
+      b.sx = n;
+      b.sy = p
+    };
+    BallBox.prototype.isColl = function (a, b) {
+      if (a.stopfoot || b.stopfoot) return false;
+      var d = Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2);
+      var c = Math.pow(a.b + b.b, 2);
+      return d < c
+    };
+
+    function Ball(a) {
+      var a = this.json = a || {};
+      this.a = a.a || {};
+      var d = this.type = a.type || 'ball';
+      var b = this.b = a.b || 30;
+      var f = this.borderWidth = a.borderWidth || 0;
+      var g = this.borderColor = a.borderColor || '#000';
+      var x = this.x = a.x || b;
+      var y = this.y = a.y || b;
+      var h = this.sx = a.sx || 3;
+      var i = this.sy = a.sy || 3;
+      var m = this.m = a.m || (b / 30);
+      var c = this.c = a.c || 'pink';
+      var e = this.e = a.e || document.createElement('div');
+      e.className = "ball"
+      var j = this.html = a.html;
+      var k = this.opa = a.opa || 1;
+      var l = this.fontSize = a.fontSize || 12;
+      var n = this.callBack = a.callBack ||
+        function () {};
+      this.collNum = 0;
+      this.initStyle();
+      this.addEvent()
+    }
+    Ball.prototype.initStyle = function () {
+      var b = this.b;
+      var s = this.e.style;
+      s.position = 'absolute';
+      s.top = s.left = 0;
+      s.width = s.height = (b - this.borderWidth) * 2 + 'px';
+      s.borderRadius = '50%';
+      s.background = this.c;
+      s.backgroundSize = 'cover';
+      s.border = this.borderWidth + 'px solid ' + this.borderColor;
+      s.opacity = this.opa;
+      var keys = Object.keys(this.a);
+      for (var i = 0; i < keys.length; i++) {
+        var key = keys[i];
+        this.e.setAttribute(key, this.a[key]);
+      }
+      if (this.html) {
+        this.e.innerHTML = this.html;
+        s.textAlign = 'center';
+        //s.lineHeight = (b - this.borderWidth) * 2 + 'px';
+        s.fontSize = this.fontSize + 'px'
+      }
+      this.setPos()
+    };
+    Ball.prototype.addEvent = function () {
+      var a = this;
+      this.e.onmouseenter = function () {
+        a.stopFoot()
+      };
+      this.e.onmouseout = function () {
+        a.startFoot()
+      }
+    };
+    Ball.prototype.foot = function (n) {
+      if (this.stopfoot) return;
+      var n = n || 1;
+      this.x += this.sx * n;
+      this.y += this.sy * n;
+      this.setPos()
+    };
+    Ball.prototype.startFoot = function () {
+      this.stopfoot = false;
+      this.e.style.zIndex = 1
+    };
+    Ball.prototype.stopFoot = function () {
+      this.stopfoot = true;
+      this.e.style.zIndex = 999
+    };
+    Ball.prototype.setPos = function () {
+      var b = this.b;
+      var x = parseInt(this.x - b);
+      var y = parseInt(this.y - b);
+      this.e.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+      this.e.style.webkitTransform = 'translate(' + x + 'px,' + y + 'px)'
+    };
+    Ball.prototype.setB = function (n) {
+      var b = this.b = n;
+      var s = this.e.style;
+      s.width = s.height = (b - this.borderWidth) * 2 + 'px';
+      s.lineHeight = (b - this.borderWidth) * 2 + 'px';
+      this.setPos()
+    };
+    Ball.prototype.setC = function (a) {
+      var c = this.c = a;
+      this.e.style.background = c;
+      this.e.style.backgroundSize = 'cover'
+    };
+    Ball.prototype.setBorderWidth = function (n) {
+      var n = this.borderWidth = n;
+      var s = this.e.style;
+      s.width = s.height = (this.b - n) * 2 + 'px';
+      s.lineHeight = (this.b - n) * 2 + 'px';
+      s.border = n + 'px solid ' + this.borderColor
+    };
+    Ball.prototype.setBorderColor = function (a) {
+      var a = this.borderColor = a;
+      this.e.style.border = this.borderWidth + 'px solid ' + a
+    };
+    Ball.prototype.setM = function (n) {
+      this.m = n || this.b / 30
+    };
+    Ball.prototype.setHTML = function (a) {
+      var b = this.html = a;
+      var s = this.e.style;
+      this.e.innerHTML = b;
+      s.textAlign = 'center';
+      s.lineHeight = (this.b - this.borderWidth) * 2 + 'px';
+      s.fontSize = this.fontSize + 'px'
+    };
+    Ball.prototype.setOpa = function (n) {
+      var a = this.opa = n;
+      this.e.style.opacity = n
+    };
+
+    function rand(m, n) {
+      return m + parseInt((n - m) * Math.random());
+    }
+    let data = [
+      {
+        name: 'aaaaaa',
+        value: 90,
+        weight: 9
+      },
+      {
+        name: 'bbbbbb',
+        value: 80,
+        weight: 8
+      },
+      {
+        name: 'ccccccc',
+        value: 10,
+        weight: 1
+      },
+    ]
+    var oB = new BallBox("container");
+    oB.ballRun();
+    let mxwidth = 1000, mxheight = 1000, xy = [];
+    data.forEach( function (v) {
+		var html = v.name;
+		var b = v.weight * 30;
+		b = b > 50 ? 50 : b;
+		b = b < 35 ? 35 : b;
+		var overlay = true;
+		var x = rand(b, mxwidth - b);
+		var y = rand(b, mxheight - b);
+    var limit = 0;
+		while (overlay && limit < 500) {
+
+			x = rand(b, mxwidth - b);
+			y = rand(b, mxheight - b);
+			var overlay1 = false;
+			xy.forEach((v, k) => {
+				if (Math.abs(v[0] - x) < b + 10 && Math.abs(v[1] - y) < b + 10) {
+					overlay1 = true;
+				}
+			})
+
+			overlay = overlay1;
+			if (!overlay1) {
+				xy.push([x, y])
+			}
+			limit++;
+		}
+
+    let color = "rgba("+rand(100, 255)+","+rand(100, 255)+","+rand(100, 255)+")";
+		var ball = new Ball({
+			a: {},
+			'b': b,
+			'x': x,
+			'y': y,
+			'sx': 0.25,
+			'sy': 0.25,
+			'html': html,
+			'c': 'radial-gradient(rgba(0,0,0,0)50%,' + color + ')',
+			//'c':'url(img/paopao1.png)',
+			'opa': 100
+		});
+		oB.addBall(ball);
+	})
+  </script>
+</body>
+
+</html>
