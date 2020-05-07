@@ -2,6 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Test from './views/Test'
+import About from './views/About'
+import Main from './views/Main.vue'
+import D3 from './views/D3test.vue'
+import Deck from './views/deck.gl.vue'
+import Table from './views/table.vue'
 
 Vue.use(Router)
 
@@ -12,7 +17,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Test
+      component: Table
     },
     {
       path: '/about',

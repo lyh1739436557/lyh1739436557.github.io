@@ -1,5 +1,3 @@
-
-
 <template>
   <div id="map">
     <!-- <h1>{{ msg }}</h1> -->
@@ -22,10 +20,10 @@ export default {
       let map = new this.mbgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/streets-v10",
-        center: [-120, 50],
-        zoom: 2,
-        pitch: 0,
-        bearing: 1
+        center: [121, 31],
+        zoom: 12,
+        pitch: 50,
+        bearing: 0
       });
       map.on("load", function() {
         // Add a geojson point source.
@@ -254,11 +252,37 @@ export default {
     }
   }
 };
+/**
+ * mapboxgl.accessToken = '<your access token here>';
+var map = new mapboxgl.Map({
+container: 'map', // container id
+style: {
+"version": 8,
+"sources": {
+"raster-tiles": {
+"type": "raster",
+"tiles": ["https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg"],
+"tileSize": 256,
+"attribution": 'Map tiles by <a target="_top" rel="noopener" href="http://stamen.com">Stamen Design</a>, under <a target="_top" rel="noopener" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>, under <a target="_top" rel="noopener" href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
+}
+},
+"layers": [{
+"id": "simple-tiles",
+"type": "raster",
+"source": "raster-tiles",
+"minzoom": 0,
+"maxzoom": 22
+}]
+},
+center: [-74.50, 40], // starting position
+zoom: 2 // starting zoom
+});
+ */
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import url("https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.0/mapbox-gl.css");
+// @import url("https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.0/mapbox-gl.css");
 body {
   height: 100%;
   margin: 0;
