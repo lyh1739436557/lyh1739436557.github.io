@@ -827,7 +827,7 @@
 
 "@babel/runtime@^7.1.2":
   version "7.2.0"
-  resolved "http://r.cnpmjs.org/@babel/runtime/download/@babel/runtime-7.2.0.tgz#b03e42eeddf5898e00646e4c840fa07ba8dcad7f"
+  resolved "https://r.cnpmjs.org/@babel/runtime/download/@babel/runtime-7.2.0.tgz#b03e42eeddf5898e00646e4c840fa07ba8dcad7f"
   integrity sha1-sD5C7t31iY4AZG5MhA+ge6jcrX8=
   dependencies:
     regenerator-runtime "^0.12.0"
@@ -872,7 +872,7 @@
 
 "@icedesign/base@^0.2.0", "@icedesign/base@^0.2.6":
   version "0.2.6"
-  resolved "http://r.cnpmjs.org/@icedesign/base/download/@icedesign/base-0.2.6.tgz#41dc1d8913e590d25c80ecc112d97cf44aa6a125"
+  resolved "https://r.cnpmjs.org/@icedesign/base/download/@icedesign/base-0.2.6.tgz#41dc1d8913e590d25c80ecc112d97cf44aa6a125"
   integrity sha1-QdwdiRPlkNJcgOzBEtl89EqmoSU=
   dependencies:
     async-validator "^1.6.7"
@@ -885,7 +885,7 @@
 
 "@icedesign/img@^0.1.6":
   version "0.1.6"
-  resolved "http://r.cnpmjs.org/@icedesign/img/download/@icedesign/img-0.1.6.tgz#3a05a59d6ed33f458b4a2d73b1d4372c8d607ed9"
+  resolved "https://r.cnpmjs.org/@icedesign/img/download/@icedesign/img-0.1.6.tgz#3a05a59d6ed33f458b4a2d73b1d4372c8d607ed9"
   integrity sha1-OgWlnW7TP0WLSi1zsdQ3LI1gftk=
   dependencies:
     "@icedesign/base" "^0.2.0"
@@ -1412,7 +1412,7 @@ async-limiter@~1.0.0:
 
 async-validator@^1.6.7:
   version "1.10.1"
-  resolved "http://r.cnpmjs.org/async-validator/download/async-validator-1.10.1.tgz#41e9b0b9f8e719e6edf946372f018a958c2e70f3"
+  resolved "https://r.cnpmjs.org/async-validator/download/async-validator-1.10.1.tgz#41e9b0b9f8e719e6edf946372f018a958c2e70f3"
   integrity sha1-QemwufjnGebt+UY3LwGKlYwucPM=
   dependencies:
     babel-runtime "6.x"
@@ -2139,7 +2139,7 @@ caseless@~0.12.0:
 
 chain-function@^1.0.0:
   version "1.0.1"
-  resolved "http://r.cnpmjs.org/chain-function/download/chain-function-1.0.1.tgz#c63045e5b4b663fb86f1c6e186adaf1de402a1cc"
+  resolved "https://r.cnpmjs.org/chain-function/download/chain-function-1.0.1.tgz#c63045e5b4b663fb86f1c6e186adaf1de402a1cc"
   integrity sha1-xjBF5bS2Y/uG8cbhhq2vHeQCocw=
 
 chalk@2.4.1, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.4.1:
@@ -2234,7 +2234,7 @@ class-utils@^0.3.5:
 
 classnames@^2.2.3, classnames@^2.2.5:
   version "2.2.6"
-  resolved "http://r.cnpmjs.org/classnames/download/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  resolved "https://r.cnpmjs.org/classnames/download/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha1-Q5Nb/90pHzJtrQogUwmzjQD2UM4=
 
 clean-css@4.2.x:
@@ -2567,7 +2567,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
 
 cropperjs@^0.7.1:
   version "0.7.2"
-  resolved "http://r.cnpmjs.org/cropperjs/download/cropperjs-0.7.2.tgz#6ad8a71db00629ba942d9cede652b27975e9e74a"
+  resolved "https://r.cnpmjs.org/cropperjs/download/cropperjs-0.7.2.tgz#6ad8a71db00629ba942d9cede652b27975e9e74a"
   integrity sha1-atinHbAGKbqULZzt5lKyeXXp50o=
 
 cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
@@ -3076,7 +3076,7 @@ dom-converter@~0.2:
 
 dom-helpers@^3.2.0:
   version "3.4.0"
-  resolved "http://r.cnpmjs.org/dom-helpers/download/dom-helpers-3.4.0.tgz#e9b369700f959f62ecde5a6babde4bccd9169af8"
+  resolved "https://r.cnpmjs.org/dom-helpers/download/dom-helpers-3.4.0.tgz#e9b369700f959f62ecde5a6babde4bccd9169af8"
   integrity sha1-6bNpcA+Vn2Ls3lprq95LzNkWmvg=
   dependencies:
     "@babel/runtime" "^7.1.2"
@@ -3237,7 +3237,7 @@ enhanced-resolve@^4.1.0:
 
 enquire.js@^2.1.6:
   version "2.1.6"
-  resolved "http://r.cnpmjs.org/enquire.js/download/enquire.js-2.1.6.tgz#3e8780c9b8b835084c3f60e166dbc3c2a3c89814"
+  resolved "https://r.cnpmjs.org/enquire.js/download/enquire.js-2.1.6.tgz#3e8780c9b8b835084c3f60e166dbc3c2a3c89814"
   integrity sha1-PoeAybi4NQhMP2DhZtvDwqPImBQ=
 
 entities@~1.1.1:
@@ -4427,7 +4427,7 @@ hoek@4.x.x:
 
 hoist-non-react-statics@^3.0.0:
   version "3.2.1"
-  resolved "http://r.cnpmjs.org/hoist-non-react-statics/download/hoist-non-react-statics-3.2.1.tgz#c09c0555c84b38a7ede6912b61efddafd6e75e1e"
+  resolved "https://r.cnpmjs.org/hoist-non-react-statics/download/hoist-non-react-statics-3.2.1.tgz#c09c0555c84b38a7ede6912b61efddafd6e75e1e"
   integrity sha1-wJwFVchLOKft5pErYe/dr9bnXh4=
   dependencies:
     react-is "^16.3.2"
@@ -5917,7 +5917,7 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
-lodash._reinterpolate@~3.0.0:
+lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
@@ -5948,19 +5948,19 @@ lodash.tail@^4.1.1:
   integrity sha1-0jM6NtnncXyK0vfKyv7HwytERmQ=
 
 lodash.template@^4.2.4, lodash.template@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.4.0.tgz#e73a0385c8355591746e020b99679c690e68fba0"
-  integrity sha1-5zoDhcg1VZF0bgILmWecaQ5o+6A=
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
+  integrity sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
   dependencies:
-    lodash._reinterpolate "~3.0.0"
+    lodash._reinterpolate "^3.0.0"
     lodash.templatesettings "^4.0.0"
 
 lodash.templatesettings@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/lodash.templatesettings/-/lodash.templatesettings-4.1.0.tgz#2b4d4e95ba440d915ff08bc899e4553666713316"
-  integrity sha1-K01OlbpEDZFf8IvImeRVNmZxMxY=
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.templatesettings/-/lodash.templatesettings-4.2.0.tgz#e481310f049d3cf6d47e912ad09313b154f0fb33"
+  integrity sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==
   dependencies:
-    lodash._reinterpolate "~3.0.0"
+    lodash._reinterpolate "^3.0.0"
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -6312,7 +6312,7 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
 
 mobx-react@^5.4.3:
   version "5.4.3"
-  resolved "http://r.cnpmjs.org/mobx-react/download/mobx-react-5.4.3.tgz#6709b7dd89670c40e9815914ac2ca49cc02bfb47"
+  resolved "https://r.cnpmjs.org/mobx-react/download/mobx-react-5.4.3.tgz#6709b7dd89670c40e9815914ac2ca49cc02bfb47"
   integrity sha1-Zwm33YlnDEDpgVkUrCyknMAr+0c=
   dependencies:
     hoist-non-react-statics "^3.0.0"
@@ -6320,7 +6320,7 @@ mobx-react@^5.4.3:
 
 mobx@^5.8.0:
   version "5.8.0"
-  resolved "http://r.cnpmjs.org/mobx/download/mobx-5.8.0.tgz#cf59eae4baa2fde4387ffb6462b7ccf3b497b03c"
+  resolved "https://r.cnpmjs.org/mobx/download/mobx-5.8.0.tgz#cf59eae4baa2fde4387ffb6462b7ccf3b497b03c"
   integrity sha1-z1nq5Lqi/eQ4f/tkYrfM87SXsDw=
 
 move-concurrently@^1.0.1:
@@ -7956,7 +7956,7 @@ react-app-polyfill@^0.2.0:
 
 react-dev-utils@^7.0.1:
   version "7.0.1"
-  resolved "http://r.cnpmjs.org/react-dev-utils/download/react-dev-utils-7.0.1.tgz#c53e759a22668ee2c0d146c24ce4bdec2b41e3c8"
+  resolved "https://r.cnpmjs.org/react-dev-utils/download/react-dev-utils-7.0.1.tgz#c53e759a22668ee2c0d146c24ce4bdec2b41e3c8"
   integrity sha1-xT51miJmjuLA0UbCTOS97CtB48g=
   dependencies:
     "@babel/code-frame" "7.0.0"
@@ -7986,7 +7986,7 @@ react-dev-utils@^7.0.1:
 
 react-dom@^16.7.0:
   version "16.7.0"
-  resolved "http://r.cnpmjs.org/react-dom/download/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
+  resolved "https://r.cnpmjs.org/react-dom/download/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
   integrity sha1-oXsqfKie5zkLwe1euBeDx0YXSLg=
   dependencies:
     loose-envify "^1.1.0"
@@ -7996,22 +7996,22 @@ react-dom@^16.7.0:
 
 react-error-overlay@^5.1.2:
   version "5.1.2"
-  resolved "http://r.cnpmjs.org/react-error-overlay/download/react-error-overlay-5.1.2.tgz#888957b884d4b25b083a82ad550f7aad96585394"
+  resolved "https://r.cnpmjs.org/react-error-overlay/download/react-error-overlay-5.1.2.tgz#888957b884d4b25b083a82ad550f7aad96585394"
   integrity sha1-iIlXuITUslsIOoKtVQ96rZZYU5Q=
 
 react-is@^16.3.2:
   version "16.7.0"
-  resolved "http://r.cnpmjs.org/react-is/download/react-is-16.7.0.tgz#c1bd21c64f1f1364c6f70695ec02d69392f41bfa"
+  resolved "https://r.cnpmjs.org/react-is/download/react-is-16.7.0.tgz#c1bd21c64f1f1364c6f70695ec02d69392f41bfa"
   integrity sha1-wb0hxk8fE2TG9waV7ALWk5L0G/o=
 
 react-lifecycles-compat@^3.0.2:
   version "3.0.4"
-  resolved "http://r.cnpmjs.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+  resolved "https://r.cnpmjs.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
 react-scripts@2.1.3:
   version "2.1.3"
-  resolved "http://r.cnpmjs.org/react-scripts/download/react-scripts-2.1.3.tgz#6e49be279f4039fb9f330d2b3529b933b8e90945"
+  resolved "https://r.cnpmjs.org/react-scripts/download/react-scripts-2.1.3.tgz#6e49be279f4039fb9f330d2b3529b933b8e90945"
   integrity sha1-bkm+J59AOfufMw0rNSm5M7jpCUU=
   dependencies:
     "@babel/core" "7.1.6"
@@ -8066,7 +8066,7 @@ react-scripts@2.1.3:
 
 react-transition-group@^1.2.1:
   version "1.2.1"
-  resolved "http://r.cnpmjs.org/react-transition-group/download/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
+  resolved "https://r.cnpmjs.org/react-transition-group/download/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
   integrity sha1-4R9yslf5IbITIpp3TfRmEjRsfKY=
   dependencies:
     chain-function "^1.0.0"
@@ -8077,7 +8077,7 @@ react-transition-group@^1.2.1:
 
 react@^16.7.0:
   version "16.7.0"
-  resolved "http://r.cnpmjs.org/react/download/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
+  resolved "https://r.cnpmjs.org/react/download/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
   integrity sha1-tnTsOWsKVxWHOzUERvfqCAKrY4E=
   dependencies:
     loose-envify "^1.1.0"
@@ -8548,7 +8548,7 @@ saxes@^3.1.4:
 
 scheduler@^0.12.0:
   version "0.12.0"
-  resolved "http://r.cnpmjs.org/scheduler/download/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
+  resolved "https://r.cnpmjs.org/scheduler/download/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
   integrity sha1-irF2mZOcCu3FoZamV3Q8SWU4ZHs=
   dependencies:
     loose-envify "^1.1.0"
@@ -9682,7 +9682,7 @@ walker@~1.0.5:
 
 warning@^3.0.0:
   version "3.0.0"
-  resolved "http://r.cnpmjs.org/warning/download/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
+  resolved "https://r.cnpmjs.org/warning/download/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
   integrity sha1-MuU3fLVy3kqwR1O9+IIcAe1gW3w=
   dependencies:
     loose-envify "^1.0.0"
